@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="c:\Users\lohog\OneDrive\Imágenes\Mémoire_fin_cycle\O-SpeechBackend\.venv"
+VIRTUAL_ENV="C:\Users\lohog\OneDrive\Bureau\Mémoire_fin_cycle\O-SpeechBackend\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

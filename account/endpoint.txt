@@ -1,0 +1,13 @@
+# Liste des endpoints :
+
+# Endpoint pour l'inscription d'un nouvel utilisateur
+inscription: http://127.0.0.1:8000/account/api/register/
+# Données requises : [username, first_name, last_name, email, password]
+
+# Endpoints pour l'authentification par token
+connexion: 
+        # Endpoint pour obtenir un token de connexion
+        - Token connexion: http://127.0.0.1:8000/account/api/token/login/
+        
+        # Endpoint pour rafraîchir un token existant
+        - Token raffraichissement: http://127.0.0.1:8000/account/api/token/refresh/

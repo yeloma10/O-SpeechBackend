@@ -9,6 +9,7 @@ def text_to_speech(request):  # Définition de la fonction de conversion texte e
     serializer = TextToSpeechSerializer(data=request.data)  # Initialise le sérialiseur avec les données reçues
     if serializer.is_valid():  # Vérifie si les données sont valides
         text = serializer.validated_data['text']  # Récupère le texte validé
+        language = serializer.validated_data['language']  # Récupère la langue validée
         selected_voice = serializer.validated_data['selectedVoice']  # Récupère la voix sélectionnée
 
         try:
